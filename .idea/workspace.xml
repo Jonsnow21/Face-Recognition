@@ -11,7 +11,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="facenet.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="facenet.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facenet.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="597">
@@ -19,6 +19,16 @@
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,6 +73,7 @@
         <option value="$PROJECT_DIR$/fr_utils.py" />
         <option value="$PROJECT_DIR$/facenet.py" />
         <option value="$PROJECT_DIR$/pubsub.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -217,7 +228,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/ayush.1521618576.jpeg" />
     <entry file="file://$PROJECT_DIR$/images/ayush.1521618563.jpeg" />
     <entry file="file://$PROJECT_DIR$/images/akash.1521550999.jpeg" />
     <entry file="file://$PROJECT_DIR$/images/akash.1521551006.jpeg" />
@@ -350,6 +360,14 @@
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
