@@ -5,9 +5,11 @@ import cv2
 from numpy import genfromtxt
 from keras.layers import Conv2D, ZeroPadding2D, Activation
 from keras.layers.normalization import BatchNormalization
+from image_pre_processing import AlignDlib
 
 _FLOATX = 'float32'
 
+align_dlib = AlignDlib(os.path.join(os.path.dirname(__file__), 'shape_predictor_68_face_landmarks.dat'))
 
 def variable(value, dtype=_FLOATX, name=None):
     v = tf.Variable(np.asarray(value, dtype=dtype), name=name)
@@ -136,7 +138,7 @@ def load_weights_from_FaceNet(FRmodel):
     weights_dict = load_weights()
 
     for name in weights:
-        if FRmodel.get_layer(name) != None:
+        if FRmodel.get_layer(name) is not None:
             FRmodel.get_layer(name).set_weights(weights_dict[name])
 
 
@@ -174,6 +176,11 @@ def load_weights():
 
 def img_to_encoding(image_path, model):
     img1 = cv2.imread(image_path, 1)
+    img1 = align_dlib.align(96, img1)
+    cv2.imwrite('pre_processed_images/' + image_path.split('/')[1], img1)
+    if img1 is None or img1.shape is None:
+        return None
+    print(img1.shape)
     img = img1[..., ::-1]
     img = np.around(np.transpose(img, (2, 0, 1)) / 255.0, decimals=12)
     x_train = np.array([img])
