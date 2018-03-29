@@ -1,7 +1,6 @@
 /node_modules
 /images
 /pre_processed_images
-/weights
 __pycache__/
 *.iml
 .idea/
