@@ -49,7 +49,7 @@ note: you have to prepend "images/" to each file name
 
 ```
 {
-    "type": "train",
+    "type": "test",
     "data": "images/file"
 }
 ```
