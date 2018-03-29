@@ -23,7 +23,7 @@ Following Technologies were used while building the software
 
 ## API end point
 
-[localhost:3000/]()
+**Post** [localhost:3000/]()
 
 * #### Request Body to train
 You can send upto 10 images for each person
