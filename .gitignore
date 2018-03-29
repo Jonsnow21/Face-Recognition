@@ -2,9 +2,6 @@
 /images
 /pre_processed_images
 /weights
+__pycache__/
 *.iml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/gradle.xml
-.idea/dictionaries
-.idea/libraries
+.idea/
